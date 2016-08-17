@@ -23,3 +23,11 @@
 }
 
 body { padding-top: 55px; }
+
+
+.no-playlists .col-offset-240{
+    padding-left: 30px;
+}
+.no-playlists .col-fixed-240{
+    display: none;
+}
