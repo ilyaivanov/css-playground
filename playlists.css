@@ -9,6 +9,15 @@
     padding-left: 255px;
     z-index: 0;
 }
-.list-group{
+
+.panel{
     margin: 10px;
+}
+
+.playlist-btn{
+    visibility: hidden;
+}
+
+.list-group-item:hover .playlist-btn{
+    visibility: visible;
 }
