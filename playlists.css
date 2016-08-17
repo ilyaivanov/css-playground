@@ -1,0 +1,14 @@
+.col-fixed-240 {
+    width: 240px;
+    position: fixed;
+    height: 100%;
+    z-index: 1;
+}
+
+.col-offset-240 {
+    padding-left: 255px;
+    z-index: 0;
+}
+.list-group{
+    margin: 10px;
+}
