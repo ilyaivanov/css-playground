@@ -21,3 +21,5 @@
 .list-group-item:hover .playlist-btn{
     visibility: visible;
 }
+
+body { padding-top: 55px; }
