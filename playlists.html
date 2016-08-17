@@ -25,7 +25,7 @@
                 <ul class="nav navbar-nav">
                     <li><a href="#">Link</a></li>
                 </ul>
-                <button id="hide-playlists" class="navbar-btn btn btn-default glyphicon glyphicon-menu-hamburger"></button>
+                <button id="hide-playlists" class="navbar-btn btn btn-default glyphicon glyphicon-arrow-left"></button>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#">Link</a></li>
                     <li class="dropdown">
@@ -53,27 +53,26 @@
                     <!-- Default panel contents -->
                     <div class="panel-heading">Playlists
                         <p class="pull-right">
-                            <button type="button" class="btn btn-default btn-xs glyphicon glyphicon-arrow-left" data-toggle="offcanvas"></button>
-                            <button type="button" class="btn btn-primary btn-xs glyphicon glyphicon-plus" data-toggle="offcanvas"></button>
+                            <button type="button" class="btn btn-primary btn-xs glyphicon glyphicon-plus"></button>
                         </p>
                     </div>
                     <div class="list-group">
                         <a href="#" class="list-group-item">Metal
                             <p class="pull-right playlist-btn">
-                                <button type="button" class="btn btn-default btn-xs glyphicon glyphicon-edit" data-toggle="offcanvas"></button>
-                                <button type="button" class="btn btn-default btn-xs btn-danger glyphicon glyphicon-remove" data-toggle="offcanvas"></button>
+                                <button type="button" class="btn btn-default btn-xs glyphicon glyphicon-edit"></button>
+                                <button type="button" class="btn btn-default btn-xs btn-danger glyphicon glyphicon-remove"></button>
                             </p>
                         </a>
                         <a href="#" class="list-group-item">Chill
                             <p class="pull-right playlist-btn">
-                                <button type="button" class="btn btn-default btn-xs glyphicon glyphicon-edit" data-toggle="offcanvas"></button>
-                                <button type="button" class="btn btn-default btn-xs btn-danger glyphicon glyphicon-remove" data-toggle="offcanvas"></button>
+                                <button type="button" class="btn btn-default btn-xs glyphicon glyphicon-edit"></button>
+                                <button type="button" class="btn btn-default btn-xs btn-danger glyphicon glyphicon-remove"></button>
                             </p>
                         </a>
                         <a href="#" class="list-group-item">Music for work
                             <p class="pull-right playlist-btn">
-                                <button type="button" class="btn btn-default btn-xs glyphicon glyphicon-edit" data-toggle="offcanvas"></button>
-                                <button type="button" class="btn btn-default btn-xs btn-danger glyphicon glyphicon-remove" data-toggle="offcanvas"></button>
+                                <button type="button" class="btn btn-default btn-xs glyphicon glyphicon-edit"></button>
+                                <button type="button" class="btn btn-default btn-xs btn-danger glyphicon glyphicon-remove"></button>
                             </p>
                         </a>
                     </div>
@@ -98,6 +97,8 @@
         $(function () {
             $('#hide-playlists').click(function () {
                 $('.row').toggleClass('no-playlists');
+                $(this).toggleClass('glyphicon-arrow-left');
+                $(this).toggleClass('glyphicon-arrow-right');
             })
         });
     </script>
